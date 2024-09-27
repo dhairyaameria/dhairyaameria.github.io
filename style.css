@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif; /* Changed to a formal serif font */
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    font-size: 14px; /* Made font slightly smaller */
+    padding: 20px;
+}
+.profile-photo {
+    display: block;
+    margin: 0 auto 20px auto; /* Center the image and add bottom margin */
+    border-radius: 50%;        /* Make the image circular */
+    width: 150px;              /* Adjust the size as needed */
+    height: 150px;
+    object-fit: cover;         /* Ensure the image covers the circular frame */
+    border: 3px solid #000000; /* Optional border to match the theme */
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+    font-family: 'Georgia', serif;
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #f4f4f9;
+    padding: 20px;
+    min-height: 100vh;
+    color: #333; /* Changed text to black to match a formal style */
+}
+
+.sidebar h1, .sidebar p {
+    color: #000; /* Black for a more formal appearance */
+    font-size: 1rem; /* Slightly smaller font size */
+}
+
+.sidebar a {
+    color: #000000; /* Darker blue for a more professional look */
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #000000; /* A deeper hover color */
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #f4f4f9;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-size: 0.9rem; /* Smaller, more formal font */
+}
+
+.nav-link {
+    color: #000000 !important;
+    font-weight: 600; /* Adjusted to be semi-bold instead of bold */
+}
+
+.nav-item {
+    font-size: small; /* Adjusted to be semi-bold instead of bold */
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #363c40;
+    text-decoration-thickness: 2px;
+}
+
+/* Main Content Area */
+.col-md-9 {
+    padding: 20px;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+    font-size: 14px; /* Ensures consistent font sizing */
+}
+
+/* Adjust for mobile responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        min-height: auto;
+        padding: 10px;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .col-md-9 {
+        padding: 10px;
+    }
+}
+
+/* Section Styles */
+#home {
+    padding: 50px 0;
+    text-align: justify;
+    color: #333;
+}
+
+#home h1 {
+    font-size: 2.5rem; /* Reduced font size */
+    font-weight: 600; /* Slightly lighter weight */
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 1rem; /* Smaller font for a more formal style */
+    margin-bottom: 5px;
+}
+
+/* Section Headings */
+h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2rem; /* Reduced size for a more formal look */
+}
+
+/* Education and Experience Section */
+#education ul, #experience ul, #projects .card {
+    margin-bottom: 20px;
+}
+
+#education ul li{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card {
+    background-color: #f4f4f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.25rem; /* Reduced font size for a formal theme */
+    color: #2c3e50;
+}
+
+/* Skills Section */
+#skills ul {
+    padding: 20px;
+}
+
+
+/* Publications Section */
+#publications ul li {
+    list-style-type: none;
+}
+
+/* Extracurricular Activities Section */
+#extracurricular ul li {
+    list-style-type: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 20px;
+    font-size: 0.8rem; /* Smaller footer text */
+}
