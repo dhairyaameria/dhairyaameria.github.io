@@ -1,323 +1,497 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhairya Ameria</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhairya Ameria Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-yHk18rq57J9+O4TwjEYq44Ec8Hv1OyTX7G8xRCD1qv/MEcZfjA0U/mvNruSz09sNFR7yKRM/pVnpC1UuX8d7BA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="container-fluid col-md-8">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a href="#home"> <b>Dhairya Ameria</b></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Technical Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#certifications">Certifications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#publications">Publications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#extracurricular">Extracurricular</a>
-                    </li>
-                </ul>
+    <div class="content">
+        <div class="navbar">
+            <h1 class="navbar-name">Dhairya Ameria</h1>
+            <div class="theme-toggle">
+                <i class="fas fa-sun toggle-icon" id="light-icon"></i>
+                <label class="theme-toggle-label">
+                    <input type="checkbox" class="theme-toggle-checkbox" id="theme-toggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <i class="fas fa-moon toggle-icon" id="dark-icon"></i>
             </div>
-        </nav>
-        <div class="row">
-            <!-- Sidebar -->
-            <div class="col-md-3 sidebar">
-                <div id="home">
-                    <img src="assets/profile photo.jpeg" alt="Dhairya Ameria Profile Photo" class="profile-photo" />
-                    <h1 class="text-left">Dhairya Ameria</h1>
-                    <p class="text-left">Software Engineer</p>
-                    <p class="text-left">Mumbai, India</p>
-                    <!-- <p class="text-left"><i class="fas fa-phone-alt"></i> +91 9930877974</p> -->
-                    <p class="text-left"><i class="fas fa-envelope"></i> <a
-                            href="mailto:ameriadhairya@gmail.com">ameriadhairya@gmail.com</a></p>
-                    <p class="text-left"><i class="fab fa-linkedin"></i> <a
-                            href="https://www.linkedin.com/in/dhairyaameria" target="_blank">LinkedIn</a></p>
-                    <p class="text-left"><i class="fab fa-github"></i> <a href="https://github.com/dhairyaameria"
-                            target="_blank">GitHub</a></p>
-                    <p class="text-left"><i class="fas fa-graduation-cap"></i> <a
-                            href="https://scholar.google.com/citations?user=b8-n9qIAAAAJ&hl=en&authuser=1"
-                            target="_blank">Google Scholar</a></p>
-                </div>
+        </div>
+
+        <div class="header-content">
+
+            <div class="left-info">
+                <p class="about-me">I am a driven and passionate software engineer currently working at JPMorganChase
+                    with experience in developing robust full-stack applications, enhancing system scalability, and
+                    migrating infrastructure to cloud platforms. I have a strong foundation in privacy-preserving
+                    machine learning, especially federated learning, and have contributed to research in this domain
+                    with multiple publications. My career is built on combining technical expertise with a
+                    problem-solving mindset, enabling me to lead projects that integrate cutting-edge technologies with
+                    real-world applications.</p>
+                <p class="links">
+                    <a href="mailto:ameria9@seas.upenn.edu"><i class="fas fa-envelope"></i> ameria9@seas.upenn.edu</a>
+                    <!-- <a href="mailto:ameriadhairya@gmail.com"><i class="fas fa-envelope"></i> ameriadhairya@gmail.com</a> -->
+                    <a href="https://www.linkedin.com/in/dhairyaameria" target="_blank"><i class="fab fa-linkedin"></i>
+                        LinkedIn</a>
+                    <a href="https://github.com/dhairyaameria" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://scholar.google.com/citations?user=b8-n9qIAAAAJ&hl=en&authuser=1" target="_blank"><i
+                            class="fas fa-graduation-cap"></i> Google Scholar</a>
+                </p>
+
             </div>
-            <!-- Main Content -->
-            <div class="col-md-9">
-                <div id="home">
-                    <h2>About me</h2>
-                    <p>
-                        I am a driven and passionate software engineer currently working at JPMorganChase with experience in developing robust full-stack applications, enhancing system scalability, and migrating infrastructure to cloud platforms. I have a strong foundation in privacy-preserving machine learning, especially federated learning, and have contributed to research in this domain with multiple publications. My career is built on combining technical expertise with a problem-solving mindset, enabling me to lead projects that integrate cutting-edge technologies with real-world applications.
-                    </p>
-                </div>
-                <div id="education">
-                    <h2>Education</h2>
-                    <div class="card">
-                        <h6>K.J. Somaiya College of Engineering, Mumbai, India
-                            <span style="float: right;">Jun 2020 - May 2024</span>
-                        </h6>
-                        <p>Bachelor of Technology in Computer Engineering
-                            <span style="float: right;">CGPA - 9.41</span>
-                        </p>
-                    </div>
-                    <div class="card">
-                        <h6>Narayana Junior College, Mumbai, India
-                            <span style="float: right;"><p>Jun 2018 - May 2020</p></span>
-                        </h6>
-                        <p>Higher Secondary Certificate
-                            <span style="float: right;">83.84%</span>
-                        </p>
-                    </div>
-                </div>
-                <section id="experience">
-                    <h2>Experience</h2>
-                    <div>
-                        <div class="card">
-                            <h6>JPMorganChase, Mumbai, India 
-                                <span style="float: right;"><p>Jan 2024 - Present</p></span></h6>
-                            <p><strong>Software Engineer</strong> - <em>[3 months]</em></p>
-                            <ul>
-                                <li>Spearheaded AWS migration for application, improving scalability and reducing
-                                    operational costs. Managed decommissioning of legacy assets, optimizing resource
-                                    utilization, reducing computational costs, and cleaning repositories.</li>
-                                <li>Led API integration with new vendor, successfully completing two-way endpoint
-                                    testing and reconciliation process design, ensuring seamless vendor transition.</li>
-                                <li>Played a key role in Scrum activities and closed 70+ Jira stories, overseeing 6
-                                    independent production releases.</li>
-                            </ul>
+            <div class="photo">
+                <img src="assets/profile-photo.jpg" alt="Profile Photo" />
+            </div>
+        </div>
 
-                            <p><strong>Software Engineer Intern</strong> - <em>[6 months]</em></p>
-                            <ul>
-                                <li>Designed and implemented a new report and scheduler dashboard. Enhanced reporting
-                                    module with API-level improvements, increasing data reporting efficiency.</li>
-                                <li>Conducted sessions on onboarding to internal LLM solutions for the department,
-                                    organized regular fun Friday sessions for team-building, and maintained coding best
-                                    practices through peer code reviews.</li>
-                                <li>Worked on infrastructure upgrades, including Aurora and Certificate updates,
-                                    ensuring compliance and system security.</li>
-                            </ul>
-                        </div>
-                        <div class="card">
-                            <h6>Nasdaq, Bangalore, India
-                                <span style="float: right;"><p>Jun 2023 - Dec 2023</p></span></h6>
-                            </h6>
-                            <p><strong>Software Developer</strong> - <em>[5 months, Part-time]</em></p>
-                            <ul>
-                                <li>Collaborated with internal stakeholders and data teams to document the requirements
-                                    and perform ETL transformations to map them to functional specifications for data
-                                    warehousing processes.</li>
-                                <li>Used monthly snapshots of contract risk pipeline data over 2 years to carry out data
-                                    analysis and modeling. Built a predictive model that can predict potential contract
-                                    risk with the current state data in Salesforce.</li>
-                            </ul>
+        <div class="tabs">
+            <div class="tab-buttons">
+                <button class="tab-button active" onclick="showSection('education')">Education</button>
+                <button class="tab-button" onclick="showSection('experience')">Experience</button>
+                <button class="tab-button" onclick="showSection('projects')">Projects</button>
+                <button class="tab-button" onclick="showSection('skills')">Technical Skills</button>
+                <button class="tab-button" onclick="showSection('certifications')">Certifications</button>
+                <button class="tab-button" onclick="showSection('publications')">Publications</button>
+                <button class="tab-button" onclick="showSection('extracurricular')">Extracurricular</button>
+            </div>
+        </div>
 
-                            <p><strong>Software Development Summer Intern</strong> - <em>[2 months]</em></p>
-                            <ul>
-                                <li>Designed and created interactive dashboards using Salesforce CRM Analytics that
-                                    provide stakeholders with a comprehensive view of real-time CRM data trends,
-                                    customer behavior, and performance metrics.</li>
-                                <li>Trained on over 70 use cases of Salesforce Analytics Query Language and Bindings.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card">
-                            <h6>K.J. Somaiya College of Engineering, Mumbai, India
-                                <span style="float: right;"><p>Jun 2022 - Dec 2022</p></span>
-                            </h6>
-                            <p><strong>Research Intern</strong></p>
-                            <ul>
-                                <li>Conducted thorough literature survey on challenges in recommendation systems,
-                                    focusing on privacy preservation and cold start scenarios in the federated learning
-                                    domain and utilized PyTorch and CUDA for implementation.</li>
-                                <li>Designed a graph neural network utilizing attention mechanisms to enhance the
-                                    effectiveness of indirect interactions.</li>
-                                <li>Presented findings at the academic conference, contributing to the advancement of
-                                    privacy-preserving machine learning in recommender systems.</li>
-                            </ul>
-                        </div>
-                        <div class="card">
-                            <h6>Zebpay, Mumbai, India
-                                <span style="float: right;"><p>Oct 2021 - Mar 2022</p></span>
-                            </h6>
-                            <p><strong>Technical Intern</strong> - <em>[6 months, Part-time]</em></p>
-                            <ul>
-                                <li>Automated the generation of reports by tracking instances and other resources on AWS
-                                    to eliminate almost 100% unnecessary usage. Auto-tagging of resources with comments
-                                    to document and analyze requirements.</li>
-                                <li>Created custom REST APIs using Python FastAPI, Postman, and Redis caching to get
-                                    real-time cryptocurrency prices in different currencies. Integrated functionality
-                                    with Slack bot for ease of use.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <!-- Projects Section -->
-                <div id="projects">
-                    <h2>Projects</h2>
-                    <div class="card">
-                        <h6>Privacy Preserving Distributed Learning based Recommendation System
-                            <span style="float: right;"><p>Dec 2023</p></span>
-                        </h6>
-                        <ul>
-                            <li>Developed a recommendation system based on the federated learning architecture, solving
-                                challenges associated with data privacy and protection and highlighting practical
-                                applications in real world scenarios.</li>
-                            <li>Conducted a comprehensive literature survey to develop the client-server cluster and
-                                employed WanDB for experiment tracking and visualization, showcasing results and
-                                progress effectively.</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <h6>Savant - All in One Research Assitant
-                            <span style="float: right;"><p>Dec 2022</p></span>
-                        </h6>
-                        <ul>
-                            <li>Devised a comprehensive virtual research assistant system to address the common
-                                challenges of time-consuming and tedious paper reading and research processes, offering
-                                a solution to make research more accessible.</li>
-                            <li>Leveraged a technology stack including MongoDB, React, NodeJS, Express.js and Material
-                                UI to create an efficient, powerful and collaborative platform for streamlined research
-                                for students and researchers.</li>
-                            <li>Achieved top 10 ranking out of the 160+ teams at national-level hackathon, KJSCE Hack 7,
-                                and selected for incubation by Riidl - Research Innovation Incubation Design Labs,
-                                prominent technology incubator, Cohort 2023.</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <h6>SafeSocial - A chrome extension
-                            <span style="float: right;"><p>Nov 2021</p></span>
-                        </h6>
-                        <ul>
-                            <li>Implemented a chrome extension used to block hateful and offensive comments on social
-                                media sites like Youtube and X.</li>
-                            <li>Developed the chrome extension using manifest version 3 and NLP model using Keras and
-                                TensorFlow modules of Python.</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <h6>Rialto - Personalised Banking System with the help of predictive analysis
-                            <span style="float: right;"><p>Apr 2021</p></span>
-                        </h6>
-                        <ul>
-                            <li>A personalized banking system built using NextJS, ExpressJS MongoDB, Python and Flask to
-                                help financial service providers identify the most relevant financial products for their
-                                customers.</li>
-                            <li>Create different machine learning models for credit risk analysis, churn model,
-                                demographic related sales prediction to provide “next best action” in the form of a
-                                personalised report.</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <h6>Tableau Dashboard - Clinical Data Analysis
-                            <span style="float: right;"><p>Dec 2020</p></span>
-                        </h6>
-                        <ul>
-                            <li>Designed a Tableau storyboard analysis a dataset from Kaggle. Devised valuable insights
-                                from the dataset representing 10 years of diabetic clinical care at 130 US hospitals and
-                                helped depicted reasonable conclusions.</li>
-                        </ul>
-                    </div>
+        <select class="tab-dropdown" onchange="showSection(this.value)">
+            <option value="education">Education</option>
+            <option value="experience">Experience</option>
+            <option value="projects">Projects</option>
+            <option value="skills">Technical Skills</option>
+            <option value="certifications">Certifications</option>
+            <option value="publications">Publications</option>
+            <option value="extracurricular">Extracurricular</option>
+        </select>
+
+        <div id="education" class="section active">
+            <h2>Education</h2>
+            <div class="card">
+                <h6>
+                    University of Pennsylvania, Philadelphia, USA
+                    <span>Incoming Aug 2025</span>
+                </h6>
+                <p>
+                    Master's of Science in Computer and Information Sciences
+                </p>
+            </div>
+            <div class="card">
+                <h6>
+                    K.J. Somaiya College of Engineering, Mumbai, India
+                    <span>Jun 2020 - May 2024</span>
+                </h6>
+                <p>
+                    Bachelor of Technology in Computer Engineering
+                    <span>CGPA: 9.41</span>
+                    <p><i>Courses: Database Technologies, Data Structures, Networks, Soft Computing, Operating Systems</i></p>
+                </p>
+            </div>
+            <!-- <div class="card">
+                <h6>
+                    Narayana Junior College, Mumbai, India
+                    <span>Jun 2018 - May 2020</span>
+                </h6>
+                <p>
+                    Higher Secondary Certificate
+                    <span>83.84%</span>
+                </p>
+            </div> -->
+        </div>
+
+        <div id="experience" class="section">
+            <h2>Experience</h2>
+
+            <div class="card">
+                <h6>JPMorganChase, Mumbai — Software Engineer <span>Aug 2024 - Present</span></h6>
+                <p>Leading application migration to AWS from on-premise infrastructure to improve scalability and reduce
+                    operational costs while managing decommissioning of legacy systems. Working on API integration with
+                    a new vendor, completing two-way endpoint testing and reconciliation process design, ensuring
+                    seamless vendor transition. Won 1st place in the internal hackathon Sepathon by building a Natural
+                    language to SQL generator using prompt engineering on large language models.</p>
+            </div>
+
+            <div class="card">
+                <h6>JPMorganChase, Mumbai — Software Engineer Intern <span> Jan 2024 - Jul 2024</span></h6>
+                <p>Implemented a new report and scheduler dashboard and enhanced the reporting module with API-level
+                    improvements, increasing data reporting efficiency. Conducted sessions on onboarding to internal LLM
+                    solutions for the department, organized regular Fun Friday sessions for team-building, and
+                    maintained coding best practices through peer code reviews. Successfully closed over 75 Jira stories
+                    and handled over 6 independent production releases.</p>
+            </div>
+
+            <div class="card">
+                <h6>Nasdaq, Bangalore — Software Development Intern <span>Aug 2023 - Dec 2023</span></h6>
+                <p>Collaborated with internal stakeholders and data teams to document the requirements and perform ETL
+                    transformations to map them to functional specifications for data warehousing processes. Utilized
+                    monthly snapshots of contract risk pipeline data over 2 years to conduct data analysis and modeling.
+                    Built a predictive model that can predict potential contract risk with the current state data in
+                    Salesforce.</p>
+            </div>
+
+            <div class="card">
+                <h6>Nasdaq, Bangalore — Software Development Intern (Summer) <span>Jun 2023 - Jul 2023</span></h6>
+                <p>Designed and created interactive dashboards using Salesforce CRM Analytics that provide stakeholders
+                    with a comprehensive view of real-time CRM data trends, customer behavior, and performance metrics.
+                    Trained on over 70 use cases of Salesforce Analytics Query Language and Bindings.</p>
+            </div>
+
+            <div class="card">
+                <h6>K.J. Somaiya College of Engineering, Mumbai — Research Intern<span>Jun 2022 - Dec 2022</span></h6>
+                <p>Conducted thorough literature survey on challenges in recommendation systems, focusing on privacy
+                    preservation and cold start scenarios in the federated learning domain and utilized PyTorch and CUDA
+                    for implementation. Created a graph neural network utilizing attention mechanisms to enhance the
+                    effectiveness of indirect interactions. Presented findings at the academic conference, contributing
+                    to the advancement of privacy-preserving machine learning in recommender systems.</p>
+            </div>
+
+            <div class="card">
+                <h6>Zebpay, Mumbai — Technical Intern <span>Oct 2021 - Mar 2022</span></h6>
+                <p>Automated the generation of reports by tracking instances and other resources on AWS to eliminate
+                    almost 100% unnecessary usage. Auto-tagging of resources with comments to document and analyze
+                    requirements. Created custom REST APIs using Python FastAPI, Postman, and Redis caching to get
+                    real-time cryptocurrency prices in different currencies and integrated functionality with a slack
+                    bot for ease of use.</p>
+            </div>
+        </div>
+        <div id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <!-- <div class="project-link">Link</div> -->
+                    <h3>Real-Time Surveillance & Object Detection</h3>
+                    <p>Designed a privacy-preserving surveillance framework using YOLOv7 and Faster R-CNN under a
+                        federated learning setup to reduce data centralization and model training communication
+                        overhead. Implemented TCP-based client-server communication and integrated Secure Multi-Party
+                        Computation (SMPC). Utilized AWS SageMaker, PyTorch, and WanDB for scalable experimentation and
+                        result tracking.</p>
                 </div>
 
-                <!-- Technical Skills Section -->
-                <div id="skills">
-                    <h2>Technical Skills</h2>
-                    <ol>
-                        <li><strong>Programming Languages:</strong> Python, Java(Spring), C, C++, JavaScript, SQL</li>
-                        <li><strong>Web technologies:</strong> HTML, CSS, NodeJS, React, Typescript, ExpressJS, NextJS
-                        </li>
-                        <li><strong>Libraries/Frameworks:</strong> TensorFlow, Keras, Streamlit, OpenCV, Flask, Sci-Kit
-                            Learn, PyTorch</li>
-                        <li><strong>Databases:</strong> MongoDB, PostgreSQL, Firebase</li>
-                        <li><strong>Software:</strong> VS Code, Bitbucket, Github, Postman, Tableau</li>
-                    </ol>
+                <div class="project-card">
+                    <!-- <div class="project-link">Link</div> -->
+                    <h3>Privacy Preserving Distributed Learning based Recommendation System</h3>
+                    <p>Developed a recommendation system based on the federated learning architecture, solving
+                        challenges associated with data privacy and protection. Conducted a comprehensive literature
+                        survey to develop the client-server cluster and employed WanDB for experiment tracking and
+                        visualization.</p>
                 </div>
 
-                <!-- Certifications Section -->
-                <div id="certifications">
-                    <h2>Certifications</h2>
-                    <ol>
-                        <li><a href="https://coursera.org/share/6ad8c2c44aa4d69c2edf78283aa7b3be">Mathematics for
-                                Machine Learning Specialization</a> | Imperial College London through Coursera</li>
-                        <li><a href="https://coursera.org/share/86f8988de7d343173e9ecac4efdfbac8">Object-Oriented Data
-                                Structures in C++</a> | University of Illinois Urbana-Champaign through Coursera</li>
-                        <li><a href="https://coursera.org/share/d04e8e5974d0d5b4e2244e10eb839de4">TensorFlow Developer
-                                Specialization</a> | DeepLearning.AI through Coursera</li>
-                        <li><a href="https://coursera.org/share/7e9fb818aa3ceaedeb49f379dcf7ed51">Analytics for Decision
-                                Making</a> | University of Minnesota through Coursera</li>
-                        <li><a href="https://coursera.org/share/c44180cc1a932f09a5e1c438f7ce4eb1">AWS Cloud Technical
-                                Essentials</a> | Amazon Web Services through Coursera</li>
-                        </l>
+                <div class="project-card">
+                    <!-- <div class="project-link">Link</div> -->
+                    <h3>Savant - All in One Research Assistant</h3>
+                    <p>Devised a comprehensive virtual research assistant system to address the common challenges of
+                        time-consuming and tedious paper reading and research processes, offering a solution to make
+                        research more accessible. Leveraged a technology stack including MongoDB, React, NodeJS,
+                        Express.js, and Material UI to create an efficient, powerful, and collaborative platform for
+                        streamlined research for students and researchers. Achieved top 10 ranking out of the 160+ teams
+                        at the national-level hackathon, KJSCE Hack 7, and selected for incubation by Riidl - Research
+                        Innovation Incubation Design Labs, a prominent technology incubator, Cohort 2023.</p>
                 </div>
 
-                <!-- Publications Section -->
-                <div id="publications">
-                    <h2>Publications</h2>
-                    <h6>Published & Presented</h6>
-                    <ol>
-                        <li>D. Ameria, U. Kumar and S. Sankhe, "A Comprehensive Analysis of Inference Attacks in
-                            Federated Learning," 2023 IEEE Pune Section International Conference (PuneCon), Pune, India,
-                            2023.</li>
-                        <li>U. Kumar, D. Ameria and P. Gupta, "MetaFRS- Federated Learning based Cold Start
-                            Recommendation System using Meta-Learning," 2023 International Conference on Evolutionary
-                            Algorithms and Soft Computing Techniques (EASCT), Bengaluru, India, 2023.</li>
-                        <li>S. Tyagi, A. Pawar, U. Kumar and D. Ameria, "Preserving Privacy in Next Keyword Prediction
-                            using Federated Learning," 2023 Second International Conference on Advances in Computational
-                            Intelligence and Communication (ICACIC), Puducherry, India.</li>
-                    </ol>
-                    <h6>Accepted & Presented</h6>
-                    <ol>
-                        <li>S. Dhumale, D. Ameria "Blockchain-based Personalized Federated Learning leveraging the SMPC
-                            protocol", IEEE, The 56th Annual International Carnahan Conference on Security Technology
-                            (ICCST), Pune, India, 2023.</li>
-                    </ol>
+                <div class="project-card">
+                    <!-- <div class="project-link">Link</div> -->
+                    <h3>SafeSocial - A Chrome Extension</h3>
+                    <p>Developed a Chrome extension used to block hateful and offensive comments on social media sites
+                        like Youtube and X using manifest version 3 and NLP model leveraging Keras and TensorFlow
+                        modules of Python.</p>
                 </div>
 
-                <!-- Extracurricular Activities Section -->
-                <div id="extracurricular">
-                    <h2>Extracurricular</h2>
-                    <ol>
-                        <li>Secured 1st Prize at the national-level hackathon Hackerstellar, organized by CSI Student's
-                            Chapter at KJSCE, developing SpaceVest, a sustainable investment platform that promotes
-                            eco-friendly investment options and services.</li>
-                        <li>Participated in more than 10 national-level hackathons and secured under top 10 positions in
-                            more than 3 hackathons.</li>
-                        <li>Volunteered for The Schools Challenge, a program by JPMorganChase and Agastya International
-                            Foundation, mentoring underprivileged students in building a technical solution to detect
-                            paddy plant diseases.</li>
-                        <li>Demonstrated leadership in maintaining public relations at Somaiya Voices, the official
-                            student-run newspaper of the university spreading across 3 campuses.</li>
-                    </ol>
+                <div class="project-card">
+                    <!-- <div class="project-link">Link</div> -->
+                    <h3>Rialto - Personalized Banking System with the help of predictive analysis</h3>
+                    <p>Built a personalized banking system using NextJS, ExpressJS MongoDB, Python, and Flask to help
+                        financial service providers identify the most relevant financial products for their customers.
+                        Created machine learning models for credit risk analysis, churn model, and demographic-related
+                        sales prediction to provide "next best action" in the form of a personalized report.</p>
+                </div>
+
+                <div class="project-card">
+                    <!-- <div class="project-link">Link</div> -->
+                    <h3>Tableau Dashboard - Clinical Data Analysis</h3>
+                    <p>Designed a Tableau storyboard analyzing a dataset representing 10 years of diabetic clinical care
+                        at 130 US hospitals and derived reasonable conclusions.</p>
                 </div>
             </div>
         </div>
+        <div id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Frameworks/Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">NodeJS</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">NextJS</span>
+                        <span class="skill-tag">ExpressJS</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Maven</span>
+                        <span class="skill-tag">Gradle</span>
+                        <span class="skill-tag">Jupyter</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Salesforce CRM</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Google Colab</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">LaTeX</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Cloud & Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">AWS EC2</span>
+                        <span class="skill-tag">AWS S3</span>
+                        <span class="skill-tag">AWS RDS</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>ML & Privacy Techniques</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Federated Learning</span>
+                        <span class="skill-tag">Local Differential Privacy</span>
+                        <span class="skill-tag">Secure Multi-Party Computation (SMPC)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="certifications" class="section">
+            <h2>Certifications</h2>
+            <div class="card">
+                <p>
+                    <a href="https://coursera.org/share/6ad8c2c44aa4d69c2edf78283aa7b3be" target="_blank"
+                        class="cert-link">Mathematics for Machine Learning Specialization</a>
+                    <span>Imperial College London</span>
+                </p>
+            </div>
+            <div class="card">
+                <p>
+                    <a href="https://coursera.org/share/86f8988de7d343173e9ecac4efdfbac8" target="_blank"
+                        class="cert-link">Object-Oriented Data Structures in C++</a>
+                    <span>University of Illinois Urbana-Champaign</span>
+                </p>
+            </div>
+            <div class="card">
+                <p>
+                    <a href="https://coursera.org/share/d04e8e5974d0d5b4e2244e10eb839de4" target="_blank"
+                        class="cert-link">TensorFlow Developer Specialization</a>
+                    <span>DeepLearning.AI</span>
+                </p>
+            </div>
+            <div class="card">
+                <p>
+                    <a href="https://coursera.org/share/7e9fb818aa3ceaedeb49f379dcf7ed51" target="_blank"
+                        class="cert-link">Analytics for Decision Making</a>
+                    <span>University of Minnesota</span>
+                </p>
+            </div>
+            <div class="card">
+                <p>
+                    <a href="https://coursera.org/share/c44180cc1a932f09a5e1c438f7ce4eb1" target="_blank"
+                        class="cert-link">AWS Cloud Technical Essentials</a>
+                    <span>Amazon Web Services</span>
+                </p>
+            </div>
+        </div>
+
+        <div id="publications" class="section">
+            <h2>Publications</h2>
+            <div class="card">
+                <h6>
+                    <span class="publication-title">A Comprehensive Analysis of Inference Attacks in Federated
+                        Learning</span>
+                    <span class="venue">IEEE PuneCon 2023</span>
+                </h6>
+                <p>
+                    D. Ameria, U. Kumar and S. Sankhe
+                </p>
+            </div>
+            <div class="card">
+                <h6>
+                    <span class="publication-title">Blockchain-based Personalized Federated Learning leveraging the SMPC
+                        protocol</span>
+                    <span class="venue">IEEE ICCST 2023</span>
+                </h6>
+                <p>
+                    S. Dhumale, D. Ameria and S. Shukla
+                </p>
+            </div>
+            <div class="card">
+                <h6>
+                    <span class="publication-title">MetaFRS - Federated Learning based Cold Start Recommendation System
+                        using Meta-Learning</span>
+                    <span class="venue">IEEE EASCT 2023</span>
+                </h6>
+                <p>
+                    U. Kumar, D. Ameria and P. Gupta
+                </p>
+            </div>
+            <div class="card">
+                <h6>
+                    <span class="publication-title">Preserving Privacy in Next Keyword Prediction using Federated
+                        Learning</span>
+                    <span class="venue">IEEE ICACIC 2023</span>
+                </h6>
+                <p>
+                    S. Tyagi, A. Pawar, U. Kumar and D. Ameria
+                </p>
+            </div>
+        </div>
+
+        <div id="extracurricular" class="section">
+            <h2>Extracurricular Activities</h2>
+            <div class="card">
+                <p>
+                    Secured 1st Prize at the national-level hackathon Hackerstellar, organized by CSI
+                    Student's Chapter at KJSCE, developing SpaceVest, a sustainable investment platform
+                    promoting eco-friendly investment options and services.
+                </p>
+            </div>
+            <div class="card">
+                <p>
+                    Volunteered for The Schools Challenge, a program by JPMorganChase and Agastya
+                    International Foundation, mentoring underprivileged students to build a solution to detect paddy
+                    plant diseases.
+                </p>
+            </div>
+            <div class="card">
+                <p>
+                    Provided basic reading and writing lessons to an uneducated house-help to help her navigate daily
+                    literacy needs as part of the CMCA volunteer activity.
+                </p>
+            </div>
+            <div class="card">
+                <p>
+                    Led public relations for Somaiya Voices, the official student-run newspaper of the
+                    university spread across 3 campuses.
+                </p>
+            </div>
+            <div class="card">
+                <p>
+                    Participated in over 10 national-level hackathons and secured top 10 positions in more than 3.
+                </p>
+            </div>
+        </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        function showSection(sectionId) {
+            // Update sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+
+            // Update buttons
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-button').forEach(button => {
+                if (button.getAttribute('onclick').includes(sectionId)) {
+                    button.classList.add('active');
+                }
+            });
+
+            // Update dropdown
+            document.querySelector('.tab-dropdown').value = sectionId;
+
+            // Scroll to section
+            // document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Check for window resize to handle tab visibility
+        window.addEventListener('resize', function () {
+            const width = window.innerWidth;
+            const tabButtons = document.querySelector('.tab-buttons');
+            const tabDropdown = document.querySelector('.tab-dropdown');
+
+            if (width <= 768) {
+                tabButtons.style.display = 'none';
+                tabDropdown.style.display = 'block';
+            } else {
+                tabButtons.style.display = 'flex';
+                tabDropdown.style.display = 'none';
+            }
+        });
+
+        // Call resize handler on load
+        window.dispatchEvent(new Event('resize'));
+
+        // Theme toggle functionality
+        (function () {
+            const themeToggle = document.getElementById('theme-toggle');
+            const htmlElement = document.documentElement;
+
+            // Check for saved theme preference or use preferred color scheme
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                htmlElement.setAttribute('data-theme', savedTheme);
+                themeToggle.checked = savedTheme === 'dark';
+            } else {
+                // Use system preference as default
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (prefersDark) {
+                    htmlElement.setAttribute('data-theme', 'dark');
+                    themeToggle.checked = true;
+                }
+            }
+
+            // Handle theme toggle changes
+            themeToggle.addEventListener('change', function () {
+                if (this.checked) {
+                    htmlElement.setAttribute('data-theme', 'dark');
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    htmlElement.setAttribute('data-theme', 'light');
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+        })();
+    </script>
 </body>
 
 </html>
